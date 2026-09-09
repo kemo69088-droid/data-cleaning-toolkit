@@ -119,6 +119,7 @@ class DataCleaner:
             pct = int(self.missing_threshold * 100)
             self.log.append(f"حذف أعمدة فارغة (أكثر من {pct}%): {', '.join(drop)}")
         return self
+
     def fill_missing(self):
         """معالجة القيم المفقودة: الوسيط للأرقام، والأكثر تكراراً للفئات."""
         filled = []
